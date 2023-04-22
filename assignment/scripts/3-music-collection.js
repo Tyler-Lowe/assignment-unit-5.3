@@ -15,11 +15,28 @@ function addToCollections (title, artist, yearPublished) {
 addToCollections('Hells Bells', 'AC/DC', '1968');
 addToCollections('Achy Breaky Heart', 'Billy Ray', '1990');
 addToCollections('Highway To Hell', 'AC/DC', '1971');
-addToCollections('Afroman', 'Colt-45', '2003');
-addToCollections('Weezer', 'Beverly Hills', '2007');
-addToCollections('50 Cent', 'Wanksta', '2007');
+addToCollections('Colt-45', 'Afroman', '2003');
+addToCollections('Beverly Hills', 'Weezer', '2007');
+addToCollections('Wanksta', '50 Cent', '2007');
 
 console.log(collection);
+
+// describe('Adding to Music Collection', () => {
+//     function addToCollections (title, artist, yearPublished) {
+//         let collectionObject = {
+//             title: title,
+//             artist: artist,
+//             yearPublished: yearPublished
+//         }
+//         collection.push(collectionObject);
+//         return console.log(collectionObject);
+//     }
+
+//     it('pushes values to an array of objects', () => {
+//         expect(addToCollections('Hanson', 'MMMBop', '1997'))
+//     })
+// })
+
 
 function showCollection (arr) {
     console.log(arr.length);
@@ -29,7 +46,11 @@ function showCollection (arr) {
 }
 
 showCollection(collection) 
-// it works
+
+
+
+
+
 
 function findByArtist(artist) {
     let artistFound = [];
@@ -42,3 +63,6 @@ function findByArtist(artist) {
 }
 
 findByArtist('harry')
+findByArtist('ac/dc')
+findByArtist('afroman')
+
